@@ -17,3 +17,17 @@ This is a simplified Splitwise Clone backend built using **FastAPI** and **Postg
 
 ##  Folder Structure
 
+
+## API Endpoints
+
+### Group Management
+- `POST /api/groups` – Create a new group
+- `GET /api/groups/{group_id}` – Get group details (name, users, total expenses)
+
+### Expense Management
+- `POST /api/groups/{group_id}/expenses` – Add a new expense to a group
+
+### Balance Tracking
+- `GET /api/groups/{group_id}/balances` – See group-wise balances
+- `GET /api/users/{user_id}/balances` – See user's balances across groups
+
